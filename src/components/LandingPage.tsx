@@ -453,6 +453,24 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Message Section */}
+      <section className="h-[829px] px-6 bg-white overflow-hidden text-center flex items-center justify-center">
+        <div className="max-w-6xl mx-auto w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            <p className="text-[60px] font-black leading-[1.4] tracking-tighter text-gray-900 break-keep">
+              "결국 우리가 원하는 것은<br/>
+              더 빠른 속도가 아니라,<br/><br/>
+              <span style={{ color: theme.pointColor }}>내 시간을 내가 결정하는 힘</span>입니다"
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Assistants Section (Slide 5) */}
       {content.assistants.isEnabled && (
         <section id="assistants" className="py-24 sm:py-48 px-6 relative overflow-hidden bg-white">
