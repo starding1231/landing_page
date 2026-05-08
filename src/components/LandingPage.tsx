@@ -188,7 +188,7 @@ export default function LandingPage() {
                  >
                    <span className="leading-tight">
                      {content.hero.buttons?.[0]?.label.includes('배우러 가기') ? (
-                       <>n8n 최고 권위자에게<br className="sm:hidden"/> 바로 배우러 가기</>
+                       <>n8n 최고 권위자에게<br/>배우러 가기</>
                      ) : (
                        content.hero.buttons?.[0]?.label || "지금 시작하기"
                      )}
@@ -314,7 +314,7 @@ export default function LandingPage() {
           <div className="max-w-7xl mx-auto text-center mb-24">
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black mb-8 tracking-tighter text-gray-900 break-keep leading-tight">
                단순한 매뉴얼이 아닙니다<br/><br/>
-               <span style={{ color: theme.pointColor }}>'수만 명의 수강생이 검증한 '최고의 강의' 커리큘럼을'</span><br/>
+               <span style={{ color: theme.pointColor }}>수만 명의 수강생이 검증한 최고의 강의 커리큘럼을</span><br/>
                한 권에 담았습니다
             </h2>
             <p className="text-xl md:text-2xl font-bold text-gray-600 mb-2 leading-[32px]">반복 업무는 n8n에 맡기고,</p>
@@ -493,17 +493,17 @@ export default function LandingPage() {
             <h2 className="text-4xl sm:text-[60px] font-bold sm:leading-[75px] mb-8 tracking-tighter text-gray-900 break-keep">
               {content.feature.title}
             </h2>
-            <div className="max-w-4xl mx-auto mb-20 space-y-4">
+            <div className="max-w-4xl mx-auto mb-20 space-y-2">
               {content.feature.benefits.map((benefit, i) => (
                 <motion.div 
                   key={i}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.1 }}
-                  className="flex items-center justify-center gap-3 text-xl sm:text-2xl font-bold text-gray-600"
+                  className="text-xl sm:text-3xl font-black break-keep text-center leading-tight sm:leading-relaxed"
+                  style={{ color: theme.pointColor }}
                 >
-                  <CheckCircle2 className="shrink-0" style={{ color: theme.pointColor }} />
-                  <span>{benefit}</span>
+                  {benefit}
                 </motion.div>
               ))}
             </div>
@@ -786,7 +786,7 @@ export default function LandingPage() {
             주도적인 내일을 위한 n8n,<br /> 지금 바로 시작하세요
           </h2>
           
-          <div className="flex flex-col gap-6 sm:gap-8 w-full max-w-2xl px-4">
+          <div className="flex flex-col gap-6 sm:gap-8 w-full max-w-xl px-4">
             {content.cta.buttons.map((btn, i) => {
               const isPrimary = i === 0;
               return (

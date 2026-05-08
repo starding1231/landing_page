@@ -9,20 +9,19 @@ export const DEFAULT_CONTENT: AppState = {
       title: '업무는 AI에게, 퇴근은 당신에게',
       subtitle: '내 일의 주도권, 이제 AI가 아니라 당신이 갖습니다',
       hookLine: '복잡한 코딩 없이, 당신만의 AI 비서를 만드세요.',
-      image: './images/hero_mockup.png',
+      image: '/images/hero_mockup.png',
       buttons: [
-        { label: 'n8n 최고 권위자에게 바로 배우러 가기', url: '#', type: 'primary' },
+        { label: 'n8n 최고 권위자에게 배우러 가기', url: 'https://product.kyobobook.co.kr/detail/S000219926914', type: 'primary' },
         { label: '둘러보기', url: '#problem', type: 'secondary' },
       ],
     },
     feature: {
       id: 'feature',
       isEnabled: true,
-      title: '코드 한 줄 몰라도 가능합니다',
+      title: 'n8n이 선사하는 완전한 자유',
       benefits: [
-        '복잡한 설치 과정 없는 클라우드 환경',
-        '드래그 앤 드롭 방식의 직관적인 디자인',
-        '수백 개의 앱과 즉시 연결되는 강력한 호환성',
+        '자동화는 단순히 시간을 아끼는 기술이 아닙니다',
+        '당신의 소중한 시간을 온전히 당신의 것으로 되찾는 방법입니다',
       ],
     },
     problem: {
@@ -70,8 +69,7 @@ export const DEFAULT_CONTENT: AppState = {
     cta: {
       headline: '더이상 업무에 끌려 다니지 마세요',
       buttons: [
-        { label: '지금 바로 나만의 ai 비서 만들기', url: '#', type: 'primary' },
-        { label: '둘러보기', url: '#', type: 'secondary' },
+        { label: '지금 바로 나만의 ai 비서 만들기', url: 'https://product.kyobobook.co.kr/detail/S000219926914', type: 'primary' },
       ],
       footerText: 'ⓒ 2026. 리코멘드 All rights reserved.',
     },
@@ -84,7 +82,7 @@ export const DEFAULT_CONTENT: AppState = {
   seo: {
     title: '리코멘드 | 최고의 n8n AI 자동화 강의',
     description: 'n8n과 AI를 활용한 업무 자동화의 모든 것. 박정기 저자의 베스트셀러 브릿지 페이지.',
-    ogImage: './images/hero_mockup.png',
+    ogImage: '/images/hero_mockup.png',
     keywords: 'n8n, 업무 자동화, AI, 마케팅 자동화, 노코드',
   },
 };
