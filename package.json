@@ -11,6 +11,7 @@
     "lint": "tsc --noEmit"
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
+    <Router basename={process.env.PUBLIC_URL}>
   },
   "dependencies": {
     "@google/genai": "^1.29.0",
