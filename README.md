@@ -2,22 +2,19 @@
 
 이 프로젝트는 Vite + React 기반의 랜딩 페이지입니다.
 
-## GitHub Pages 배포 방법
+## GitHub Pages 배포 방법 (자동 배포)
 
-이 프로젝트는 `gh-pages` 패키지를 사용하여 편리하게 배포할 수 있습니다.
-배포 주소는 `https://starding1231.github.io/-n8n-AI-/`로 설정되어 있습니다.
+이 프로젝트는 GitHub Actions를 통해 코드를 푸시할 때마다 자동으로 배포되도록 설정되어 있습니다. 터미널 명령어를 입력할 필요가 없습니다.
 
-1. 먼저 GitHub 리포지토리에 코드를 푸시합니다.
-2. 터미널에서 다음 명령어를 실행합니다:
-   ```bash
-   npm run deploy
-   ```
-3. GitHub 리포지토리의 **Settings > Pages** 메뉴로 이동합니다.
-4. **Build and deployment > Source** 항목에서 `Deploy from a branch`를 선택하고, 브랜치를 `gh-pages`로 설정합니다.
+1. 이 프로젝트의 모든 코드를 GitHub 리포지토리의 `main` 브랜치에 업로드(푸시)합니다.
+2. GitHub 리포지토리 페이지에서 **Settings > Pages** 메뉴로 이동합니다.
+3. **Build and deployment > Source** 항목의 드롭다운 메뉴에서 **GitHub Actions**를 선택합니다.
+4. 상단의 **Actions** 탭으로 이동하면 배포가 진행 중인 것을 확인할 수 있습니다.
+5. 배포가 완료되면 `https://starding1231.github.io/-n8n-AI-/` 주소에서 확인 가능합니다.
 
-### 주의사항
-- `vite.config.ts`의 `base` 설정이 `/-n8n-AI-/`로 되어 있어야 정상적으로 작동합니다.
-- Node.js 버전은 로컬 환경에 맞춰 사용하시면 됩니다. (18 버전 이상 권장)
+### 주요 설정 정보
+- **배포 환경**: Node.js 18
+- **Base Path**: `/-n8n-AI-/` (vite.config.ts에 설정됨)
 
 
 ## 수동 빌드 방법
