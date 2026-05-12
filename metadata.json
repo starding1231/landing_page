@@ -1,6 +1,6 @@
 {
   "name": "리코멘드 (Recommend)",
-  "description": "n8n AI 자동화 강의 도서 판매를 위한 고전환 브릿지 랜딩 페이지 및 관리자 대시보드",
+  "description": "n8n AI 자동화 강의 도서 판매를 위한 전환 브릿지 랜딩 페이지",
   "requestFramePermissions": [],
   "majorCapabilities": []
 }
