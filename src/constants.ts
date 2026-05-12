@@ -11,7 +11,7 @@ export const DEFAULT_CONTENT: AppState = {
       hookLine: '복잡한 코딩 없이, 당신만의 AI 비서를 만드세요.',
       image: '/images/hero_mockup.png',
       buttons: [
-        { label: 'n8n 최고 권위자에게 배우러 가기', url: 'https://product.kyobobook.co.kr/detail/S000219926914', type: 'primary' },
+        { label: '최고의 강의 10% 할인가로 소장하기', url: 'https://product.kyobobook.co.kr/detail/S000219926914', type: 'primary' },
         { label: '둘러보기', url: '#problem', type: 'secondary' },
       ],
     },
