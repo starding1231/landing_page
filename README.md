@@ -2,30 +2,33 @@
 
 이 프로젝트는 Vite + React 기반의 랜딩 페이지입니다.
 
-## GitHub Pages 배포 방법
+## GitHub Pages 배포 방법 ( docs 폴더 방식 )
 
-이 프로젝트는 현재 두 가지 방법으로 배포할 수 있습니다.
+현재 GitHub Actions 대신 **`main` 브랜치의 `/docs` 폴더**를 사용하는 방식으로 설정되어 있습니다.
 
-### 방법 1: 터미널을 사용하는 경우 (권장)
-로컬 컴퓨터의 터미널에서 다음 명령어를 순서대로 입력하세요.
-```bash
-npm install
-npm run deploy
-```
-이 명령어는 프로젝트를 빌드한 후 `gh-pages` 브랜치에 자동으로 업로드합니다. 그 후 GitHub Settings > Pages에서 Source를 `gh-pages` 브랜치로 설정하면 됩니다.
+### 1단계: AI Studio에서 변경사항 Push 하기
+1. 왼쪽 파일 탐색기에 **`docs`** 폴더가 있는지 확인합니다.
+2. 상단 메뉴의 **Settings > Export to GitHub** (또는 좌측 하단의 GitHub 아이콘)을 클릭합니다.
+3. **"Stage and commit all changes"** 버튼이 활성화되어 있다면 클릭하여 깃허브에 반영합니다.
+   - 만약 이 버튼이 **비활성화**되어 있다면, 이미 모든 파일이 반영된 상태이거나 시스템 지연일 수 있습니다. 페이지를 새로고침(F5) 해보세요.
 
-### 방법 2: 터미널이나 GitHub Actions를 사용할 수 없는 경우 (수동 업로드)
-1. AI Studio (현재 화면) 왼쪽 파일 탐색기에서 **`deploy_files`** 폴더가 보이는지 확인합니다. (보이지 않는다면 페이지를 새로고침 해보세요.)
-2. `deploy_files` 폴더 내부의 모든 파일을 다운로드합니다.
-3. 자신의 GitHub 리포지토리에 `gh-pages`라는 이름의 새로운 브랜치를 생성합니다.
-4. `gh-pages` 브랜치에 다운로드한 `deploy_files` 폴더 안의 파일들을 **루트(최상위)**에 업로드합니다. (`deploy_files` 폴더 자체를 올리는 것이 아니라 그 내용물만 올립니다.)
-5. GitHub 리포지토리의 **Settings > Pages** 메뉴에서 **Build and deployment > Source**를 `Deploy from a branch`로 선택하고 브랜치를 `gh-pages`로 지정합니다.
+### 2단계: GitHub 저장소 설정 (중요)
+1. 자신의 GitHub 리포지토리 페이지로 이동합니다.
+2. **Settings > Pages** 메뉴로 들어갑니다.
+3. **Build and deployment > Source**를 **"Deploy from a branch"**로 선택합니다.
+4. **Branch**를 `main`으로 선택하고, 그 옆의 폴더 드롭다운에서 **`/docs`**를 선택한 후 **Save**를 누릅니다.
 
-### 주요 설정 정보
-- **배포 주소**: `https://starding1231.github.io/-n8n-AI-/`
-- **Base Path**: `/-n8n-AI-/` (vite.config.ts에 설정됨)
-- **중요**: 배포 후 빈 화면이 나온다면 브라우저의 개발자 도구(F12) 콘솔에서 경로 오류가 있는지 확인하세요.
+### 3단계: 배포 확인
+- 배포 주소: `https://starding1231.github.io/-n8n-AI-/`
+- 배포 직후에 **Jekyll Error**나 **404 에러**가 난다면, GitHub에서 `docs` 폴더를 제대로 인식하지 못한 것입니다. 깃허브에 `docs` 폴더가 실제로 올라갔는지 확인해 주세요.
 
+### 주의사항
+- `docs/.nojekyll` 파일이 있어야 깃허브의 Jekyll 처리 과정을 건너뛰고 정상적으로 배포됩니다. (현재 생성되어 있습니다.)
+- **빈 화면**이 나오는 문제는 `vite.config.ts`의 `base` 경로와 `main.tsx`의 `basename` 설정을 통해 해결되었습니다.
+
+
+### 최근 업데이트
+- **업데이트 일시**: 2026-05-12 08:30 (MIME 타입 오류 수정 및 빌드 갱신)
 
 ## 수동 빌드 방법
 

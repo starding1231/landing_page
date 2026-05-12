@@ -9,7 +9,8 @@ import LandingPage from './components/LandingPage';
 import AdminDashboard from './components/AdminDashboard';
 import { Settings, Eye } from 'lucide-react';
 
-export default function App() {
+export default // MIME fix trigger
+function App() {
   const [isAdmin, setIsAdmin] = useState(false);
 
   // Simple shortcut: Alt+A to toggle admin
