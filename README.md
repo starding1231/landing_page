@@ -28,12 +28,12 @@
 
 
 ### 최근 업데이트
-- **업데이트 일시**: 2026-05-13 00:07 (배포 경로 최적화 및 MIME 타입 안정성 확보)
+- **업데이트 일시**: 2026-05-13 00:12 (상대 경로 최적화 및 HashRouter 전환)
 
 ### 이미지 및 배포 설정
-- **Base URL**: `/-n8n-AI-/` (vite.config.ts)
-- **React Router**: `BrowserRouter`에 `import.meta.env.BASE_URL` 반영
-- **이미지 경로**: `${import.meta.env.BASE_URL}images/...` 패턴 적용
+- **Base URL**: `./` (vite.config.ts)
+- **React Router**: `HashRouter` 사용 (GitHub Pages 호환성 극대화)
+- **이미지 경로**: `./images/...` 상대 경로 패턴 적용
 - **빌드 위치**: `/docs` 폴더 (GitHub Pages 설정 필수)
 
 ## 수동 빌드 방법
