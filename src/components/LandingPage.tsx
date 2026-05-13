@@ -192,7 +192,7 @@ export default function LandingPage() {
                    style={{ backgroundColor: theme.pointColor }}
                  >
                    <span className="leading-tight">
-                     {content.hero.buttons?.[0]?.label.includes('10% 할인가') ? (
+                     {content.hero.buttons?.[0]?.label?.includes('10% 할인가') ? (
                        <>최고의 강의<br/>10% 할인가로<br/>소장하기</>
                      ) : (
                        content.hero.buttons?.[0]?.label || "지금 시작하기"

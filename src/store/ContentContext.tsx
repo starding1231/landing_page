@@ -6,7 +6,7 @@ const ContentContext = createContext<ContentContextType | undefined>(undefined);
 
 export const ContentProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [state, setState] = useState<AppState>(() => {
-    const saved = localStorage.getItem('recommend_app_state_v13');
+    const saved = localStorage.getItem('recommend_app_state_v15');
     if (!saved) return DEFAULT_CONTENT;
     
     try {
@@ -34,7 +34,7 @@ export const ContentProvider: React.FC<{ children: React.ReactNode }> = ({ child
   });
 
   useEffect(() => {
-    localStorage.setItem('recommend_app_state_v13', JSON.stringify(state));
+    localStorage.setItem('recommend_app_state_v15', JSON.stringify(state));
   }, [state]);
 
   const updateContent = useCallback((path: string, value: any) => {
