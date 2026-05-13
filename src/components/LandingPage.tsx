@@ -29,6 +29,11 @@ import {
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
+// Import images for consistent bundling
+import heroMockup from '../assets/images/hero_mockup.png';
+import problemBefore from '../assets/images/problem_before.png';
+import problemAfter from '../assets/images/problem_after.png';
+
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
@@ -147,7 +152,7 @@ export default function LandingPage() {
             <div className="relative group max-w-xl mx-auto">
                <div className="relative p-6 rounded-[2rem] border border-black/[0.05]" style={{ backgroundColor: theme.pointColor }}>
                  <img 
-                   src="https://starding1231.github.io/-n8n-AI-/images/main/hero_mockup.png"
+                   src={heroMockup}
                    alt="Book Mockup" 
                    className="w-full h-auto rounded-[1.5rem] transition-transform duration-500 group-hover:scale-[1.02]"
                    referrerPolicy="no-referrer"
@@ -267,7 +272,7 @@ export default function LandingPage() {
               </div>
               <div className="overflow-hidden rounded-[2.5rem] border border-black/5 shadow-lg bg-gray-200 aspect-[4/3] relative">
                 <img 
-                  src="https://starding1231.github.io/-n8n-AI-/images/main/problem_before.png" 
+                  src={problemBefore} 
                   className="w-full h-full object-cover filter grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
                 />
@@ -292,7 +297,7 @@ export default function LandingPage() {
               </div>
               <div className="overflow-hidden rounded-[2.5rem] border border-black/5 shadow-2xl bg-white aspect-[4/3] relative">
                 <img 
-                  src="https://starding1231.github.io/-n8n-AI-/images/main/problem_after.png" 
+                  src={problemAfter} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />

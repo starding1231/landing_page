@@ -28,12 +28,12 @@
 
 
 ### 최근 업데이트
-- **업데이트 일시**: 2026-05-13 00:17 (Favicon 404 오류 수정 및 경로 안정화)
+- **업데이트 일시**: 2026-05-13 00:30 (이미지 정적 자산화 및 절대 경로 고정)
 
 ### 이미지 및 배포 설정
-- **Base URL**: `./` (vite.config.ts)
+- **Base URL**: `/-n8n-AI-/` (vite.config.ts)
 - **React Router**: `HashRouter` 사용 (GitHub Pages 호환성 극대화)
-- **이미지 경로**: `./images/...` 상대 경로 패턴 적용
+- **이미지 관리**: `src/assets/images`에 보관하며 코드에서 `import`하여 사용합니다. (Vite 번들링에 포함되어 경로가 자동 관리됨)
 - **빌드 위치**: `/docs` 폴더 (GitHub Pages 설정 필수)
 
 ## 수동 빌드 방법
