@@ -149,10 +149,9 @@ export default function LandingPage() {
             <div className="relative group max-w-xl mx-auto">
                <div className="relative p-6 rounded-[2rem] border border-black/[0.05]" style={{ backgroundColor: theme.pointColor }}>
                  <img 
-                   src="assets/images/hero_mockup.png"
+                   src="./assets/images/hero_mockup.png"
                    alt="Book Mockup" 
                    className="w-full h-auto rounded-[1.5rem] transition-transform duration-500 group-hover:scale-[1.02]"
-                   referrerPolicy="no-referrer"
                  />
                  
                  {/* Certification Mark */}
@@ -269,9 +268,8 @@ export default function LandingPage() {
               </div>
               <div className="overflow-hidden rounded-[2.5rem] border border-black/5 shadow-lg bg-gray-200 aspect-[4/3] relative">
                 <img 
-                  src="assets/images/problem_before.png" 
+                  src="./assets/images/problem_before.png" 
                   className="w-full h-full object-cover filter grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-end text-white p-8 text-center backdrop-blur-[1px] pb-12">
                    <p className="text-2xl font-black tracking-tight leading-tight">
@@ -294,9 +292,8 @@ export default function LandingPage() {
               </div>
               <div className="overflow-hidden rounded-[2.5rem] border border-black/5 shadow-2xl bg-white aspect-[4/3] relative">
                 <img 
-                  src="assets/images/problem_after.png" 
+                  src="./assets/images/problem_after.png" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#ef387a]/80 via-transparent to-transparent flex flex-col items-center justify-end text-white p-8 text-center pb-12">
                    <p className="text-2xl font-black tracking-tight leading-tight drop-shadow-xl">

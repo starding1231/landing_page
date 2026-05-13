@@ -33,7 +33,7 @@
 ### 이미지 및 배포 설정
 - **Base URL**: `./` (vite.config.ts)
 - **React Router**: `HashRouter` 사용 (GitHub Pages 호환성 극대화)
-- **이미지 관리**: `public/assets/images`에 보관하며 `assets/images/...` 상대 경로로 호출합니다. (Vite의 `base: './'` 설정과 결합하여 배포 환경에서 유연한 경로 대응)
+- **이미지 관리**: `public/assets/images`에 보관하며 `./assets/images/...` 명시적 상대 경로로 호출합니다. (Vite의 `base: './'` 설정과 결합하여 배포 환경에서 가장 안정적인 경로 대응)
 - **빌드 위치**: `/docs` 폴더 (GitHub Pages 설정 필수)
 
 ## 수동 빌드 방법
