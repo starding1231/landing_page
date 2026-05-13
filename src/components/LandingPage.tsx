@@ -273,7 +273,7 @@ export default function LandingPage() {
               <div className="overflow-hidden rounded-[2.5rem] border border-black/5 shadow-lg bg-gray-200 aspect-[4/3] relative">
                 <img 
                   src={problemBefore} 
-                  className="w-full h-full object-cover filter grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-auto object-cover filter grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-end text-white p-8 text-center backdrop-blur-[1px] pb-12">
                    <p className="text-2xl font-black tracking-tight leading-tight">
@@ -297,7 +297,7 @@ export default function LandingPage() {
               <div className="overflow-hidden rounded-[2.5rem] border border-black/5 shadow-2xl bg-white aspect-[4/3] relative">
                 <img 
                   src={problemAfter} 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#ef387a]/80 via-transparent to-transparent flex flex-col items-center justify-end text-white p-8 text-center pb-12">
                    <p className="text-2xl font-black tracking-tight leading-tight drop-shadow-xl">
