@@ -273,7 +273,7 @@ export default function LandingPage() {
               <div className="overflow-hidden rounded-[2.5rem] border border-black/5 shadow-lg bg-gray-200 aspect-[4/3] relative">
                 <img 
                   src={problemBefore} 
-                  className="w-full h-auto object-cover filter grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-full object-cover filter grayscale-[0.5] group-hover:grayscale-0 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-end text-white p-8 text-center backdrop-blur-[1px] pb-12">
                    <p className="text-2xl font-black tracking-tight leading-tight">
@@ -297,7 +297,7 @@ export default function LandingPage() {
               <div className="overflow-hidden rounded-[2.5rem] border border-black/5 shadow-2xl bg-white aspect-[4/3] relative">
                 <img 
                   src={problemAfter} 
-                  className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#ef387a]/80 via-transparent to-transparent flex flex-col items-center justify-end text-white p-8 text-center pb-12">
                    <p className="text-2xl font-black tracking-tight leading-tight drop-shadow-xl">
@@ -317,7 +317,7 @@ export default function LandingPage() {
           <div className="max-w-7xl mx-auto text-center mb-24">
             <h2 className="text-3xl sm:text-5xl md:text-6xl font-black mb-8 tracking-tighter text-gray-900 break-keep leading-tight">
                단순한 매뉴얼이 아닙니다<br/><br/>
-               <span style={{ color: theme.pointColor }}>수만 명의 수강생이 검증한 최고의 강의 커리큘럼을</span><br/>
+               <span style={{ color: theme.pointColor }}>수만 명의 수강생이 인정한 최고의 강의 커리큘럼을</span><br/>
                한 권에 담았습니다
             </h2>
             <p className="text-xl md:text-2xl font-bold text-gray-600 mb-2 leading-[32px]">반복 업무는 n8n에 맡기고,</p>
