@@ -790,7 +790,7 @@ export default function LandingPage() {
           </h2>
           
           <div className="flex flex-col gap-6 sm:gap-8 w-full max-w-xl px-4">
-            {content.cta.buttons.map((btn, i) => {
+            {content.cta.buttons?.map((btn, i) => {
               const isPrimary = i === 0;
               return (
                 <motion.a 
