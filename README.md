@@ -28,10 +28,10 @@
 
 
 ### 최근 업데이트
-- **업데이트 일시**: 2026-05-13 02:33 (Vite base: './' 설정 및 상대 경로 호출로 배포 환경 호환성 극대화)
+- **업데이트 일시**: 2026-05-13 16:23 (Vite base: '/n8n-AI/' 설정 및 저장소 이름 변경 반영)
 
 ### 이미지 및 배포 설정
-- **Base URL**: `./` (vite.config.ts - 배포 호환성 극대화)
+- **Base URL**: `/n8n-AI/` (vite.config.ts - 저장소 이름에 맞게 설정)
 - **React Router**: `HashRouter` 사용 (GitHub Pages 호환성 극대화)
 - **이미지 관리**: `src/assets/images`에 보관하며 React 컴포넌트에서 `import`하여 사용합니다. (Vite가 배포 환경에 맞춰 최적화된 경로를 생성합니다)
 - **빌드 위치**: `/docs` 폴더 (GitHub Pages 설정 필수)
