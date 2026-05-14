@@ -213,7 +213,6 @@ export default function LandingPage() {
   끝까지 확인하고 최고의 강의를 가장 먼저 만나는 혜택을 누리세요!
               </p>
             </div>
-           </motion.a>
         </section>
       )}
 
