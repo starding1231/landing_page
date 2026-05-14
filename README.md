@@ -40,19 +40,17 @@
 - **React Router**: `HashRouter` 사용 (GitHub Pages 호환성 극대화)
 - **빌드 위치**: `/docs` 폴더 (GitHub Pages 설정: Branch `main`, Folder `/docs` 필수)
 
-### ⚠️ GitHub 저장소에 docs 폴더가 안 보일 때 해결법
-현재 구글 AI 스튜디오 내부적으로는 `/docs` 폴더와 그 안의 `index.html`이 **정상적으로 생성된 상태**입니다. (확인 완료)
+### 🚀 GitHub Pages 자동 배포 (GitHub Actions 방식)
+더 이상 `docs` 폴더를 수동으로 관리하실 필요가 없습니다! 
 
-만약 본인의 GitHub 리포지토리에 이 폴더가 보이지 않는다면 다음 중 하나를 시도하세요:
+1. **배포 설정 변경**: GitHub 저장소 `Settings` -> `Pages` 이동
+2. **Build and deployment > Source**: **"GitHub Actions"**를 선택하세요.
+3. **완료**: 이제 AI Studio에서 **Export to GitHub**를 하면, GitHub가 자동으로 소스를 읽어 빌드하고 배포합니다.
 
-1.  **전체 다시 올리기 (추천)**: AI Studio 우측 상단의 메뉴에서 **`Export to GitHub`**를 선택하여 현재 상태(docs 폴더 포함)를 저장소에 통째로 덮어쓰세요.
-2.  **동기화 확인**: `Sync with GitHub` 버튼을 누를 때 변경된 파일 목록에 `docs/index.html`이 포함되어 있는지 꼭 확인하세요.
-3.  **수동 업로드**: 최후의 수단으로, AI Studio에서 소스 코드를 다운로드(Download ZIP)한 뒤, `docs` 폴더만 GitHub 저장소에 직접 업로드(Drag & Drop)하면 즉시 배포가 시작됩니다.
-
-**현재 상태**:
-- 빌드 경로: `/docs` (완료)
-- 배포 설정: `./` 상대 경로 (완료)
-- 파일 확인: `docs/index.html` 생성됨 (완료)
+**현재 설정**:
+- 빌드 출력: `/dist` (표준)
+- 자동 배포: `.github/workflows/deploy.yml` 추가됨
+- 상대 경로: `./` 설정으로 어떤 URL에서도 작동함
 
 2. **로컬 빌드 시 오류 해결**:
    로컬 컴퓨터의 터미널(GitHub Desktop 터미널 등)에서 빌드가 안 될 경우 다음 명령어를 순서대로 입력하세요:
