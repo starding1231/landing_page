@@ -207,9 +207,9 @@ export default function LandingPage() {
                    <span>{content.hero.buttons?.[1]?.label || "둘러보기"}</span>
                  </motion.a>
                </div>
-               <p className="mt-6 text-[30px] font-bold text-gray-400 opacity-80 break-keep">
-                 끝까지 확인하고 최고의 강의를 가장 먼저 만나는 혜택을 누리세요!
-               </p>
+               <p className="mt-10 text-xl sm:text-2xl font-bold text-black break-keep leading-relaxed px-4">
+               끝까지 확인하고 최고의 강의를 가장 먼저 만나는 혜택을 누리세요!
+              </p>
             </div>
           </motion.div>
         </section>
