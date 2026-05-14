@@ -207,13 +207,7 @@ export default function LandingPage() {
                    <span>{content.hero.buttons?.[1]?.label || "둘러보기"}</span>
                  </motion.a>
             </div>
-              <p class>
-  <p className="mt-10 text-xl sm:text-2xl font-bold text-black break-keep leading-relaxed px-4">
-  {content.hero.ctaLine}
-</p>
-  끝까지 확인하고 최고의 강의를 가장 먼저 만나는 혜택을 누리세요!
-              </p>
-            
+              
         </section>
       )}
 
@@ -222,6 +216,12 @@ export default function LandingPage() {
         <section id="problem" className="py-24 sm:py-40 px-6 relative overflow-hidden" 
           style={{ background: `linear-gradient(180deg, #ffffff 0%, ${theme.pointColor}15 50%, #ffffff 100%)` }}>
           <div className="absolute inset-0 bg-grid opacity-[0.03]" />
+          <p class>
+  <p className="mt-10 text-xl sm:text-2xl font-bold text-black break-keep leading-relaxed px-4">
+  {content.hero.ctaLine}
+</p>
+  끝까지 확인하고 최고의 강의를 가장 먼저 만나는 혜택을 누리세요!
+              </p>
           <motion.div 
             initial="hidden"
             whileInView="visible"
