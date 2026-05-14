@@ -31,6 +31,10 @@ import { twMerge } from 'tailwind-merge';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
+  export default function LandingPage() {
+  return (
+    <div>
+      <h1>TEST123456</h1>
 }
 
 const FloatingNodes = ({ color }: { color: string }) => (
@@ -843,4 +847,7 @@ export default function LandingPage() {
       </footer>
     </div>
   );
+}
+</div>
+  )
 }
